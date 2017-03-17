@@ -19,11 +19,12 @@ public class ExceptionThread implements Runnable {
      * @see Thread#run()
      */
     public void run() {
-        try {
-            throw new RuntimeException();
-        }catch (RuntimeException e){
-            System.out.println("run exception");
-        }
+        throw new RuntimeException();
+//        try {
+//
+//        }catch (RuntimeException e){
+//            System.out.println("run exception");
+//        }
     }
 
     public static void main(String[] args) {
