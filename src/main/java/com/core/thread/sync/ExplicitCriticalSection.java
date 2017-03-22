@@ -14,13 +14,14 @@ public class ExplicitCriticalSection {
         CriticalSection.testApproaches(p1, p2);
     }
 }
+
 class ExplicitPairManager1 extends PairManager {
     private Lock lock = new ReentrantLock();
 
     public synchronized void increment() {
-            pair.incrementX();
-            pair.incrementY();
-            store(getPair());
+        pair.incrementX();
+        pair.incrementY();
+        store(getPair());
     }
 }
 
