@@ -7,7 +7,7 @@ public class MyThread {
     public static void main(String[] args){
 //        Liftoff liftoff = new Liftoff();
 //        liftoff.run();
-//        Thread a = new Thread(new Liftoff());
+        Thread a = new Thread(new Liftoff());
 //        a.start();
 
         for(int i =0;i<5;i++){
